@@ -1,4 +1,3 @@
-{{-- {{dd($slides)}} --}}
 @if (isset($slides) && count($slides) > 0)
     <div class="home-banner">
         <div class="home-slider">

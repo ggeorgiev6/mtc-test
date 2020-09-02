@@ -37,3 +37,41 @@
         }
     }
 }
+
+// Home testimonials section
+
+.home-testimonials {
+    padding: 117px 0;
+    &-content {
+        margin-bottom: 67px;
+    }
+    &-slider {
+        &-inner {
+            z-index: 20;
+        }
+        &-controls {
+            margin-top: -7rem;
+            outline: none;
+            .control {
+                width: 50px;
+                height: 50px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                outline: none;
+                cursor: pointer;
+                &.previous {
+                    background-image: url('/images/icons/control-previous.svg');
+                }
+                &.next {
+                    background-image: url('/images/icons/control-next.svg');
+                }
+            }
+        }
+    }
+}
+
+// Home gallery section
+
+.home-gallery {
+    padding: 95px 0;
+}
