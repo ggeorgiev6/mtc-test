@@ -1,1 +1,41 @@
-//
+// ------------
+//   Icons
+// ------------
+
+@import '~remixicon/fonts/remixicon.css';
+
+// ------------
+//   Slider
+// ------------
+
+@import '~tiny-slider/dist/tiny-slider.css';
+
+
+// ------------
+//   Bootstrap
+// ------------
+
+// Required
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+// Optional
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/buttons";
+
+// ------------
+//   Modules
+// ------------
+
+@import 'modules/variables';
+@import 'modules/sliders';
+@import 'modules/typography';
+@import 'modules/buttons';
+@import 'modules/home';
+@import 'modules/footer';
