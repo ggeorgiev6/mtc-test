@@ -1,0 +1,71 @@
+// Banner module
+
+.home-banner {
+    .home-slider {
+        .slide {
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &-controls {
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+            z-index: 10;
+            .indicator {
+                border-radius: 20px;
+                width: 50px;
+                height: 5px;
+                background-color: $white;
+                transition: background-color .3s ease-in-out ;
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+                &.tns-nav-active,
+                &:hover {
+                    background-color: $mtc-primary;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 5;
+            background: transparent linear-gradient(180deg, #00000080 0%, #0000004D 100%) 0% 0% no-repeat padding-box;
+        }
+    }
+    &-content {
+        text-align: center;
+        color: #fff;
+        z-index: 6;
+        position: absolute;
+        text-shadow: 0px 0px 25px #00000080;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 600px;
+        max-width: 1020px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @include media-breakpoint-down(lg) {
+            padding: 0 6%;
+        }
+        .main-heading {
+            margin-bottom: 45px;
+        }
+    }
+}

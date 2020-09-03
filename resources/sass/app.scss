@@ -5,28 +5,27 @@
 @import 'modules/variables';
 
 // ------------
-//   Icons
-// ------------
-
-@import '~remixicon/fonts/remixicon.css';
-
-// ------------
 //   Slider
 // ------------
 
 @import '~tiny-slider/dist/tiny-slider.css';
 
+// ------------
+//   Lightbox
+// ------------
+
+@import '~glightbox/dist/css/glightbox.min.css';
 
 // ------------
 //   Bootstrap
 // ------------
 
-// Required
+// Required modules
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 
-// Optional
+// Optional modules
 @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/images";
@@ -36,11 +35,13 @@
 @import "~bootstrap/scss/buttons";
 
 // ------------
-//   Modules
+// Site Modules
 // ------------
 
-@import 'modules/sliders';
+@import 'modules/banner';
 @import 'modules/typography';
 @import 'modules/buttons';
 @import 'modules/home';
 @import 'modules/footer';
+@import 'modules/header';
+@import 'modules/global';

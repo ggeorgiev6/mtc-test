@@ -1,38 +1,54 @@
+// Bootstrap + global variables
+
 // Colours
-$primary: #D4B254;
+$mtc-primary: #D4B254;
+$mtc-light: #EEEEEE;
+
+// Theme Colors
+$theme-colors: (
+    "mtc-primary": $mtc-primary,
+    "mtc-light": $mtc-light,
+    "white": #fff
+);
+
+// Letter spacing
+$mtc-char-spacing: 4px;
 
 // Typography
 $headings-font-weight: 600;
-$headings-font-family: "Helvetica", "Lato", "Open Sans",  sans-serif;
-$headings-line-height: 1.23;
+$headings-font-family: "Helvetica", "Inter", "Open Sans",  sans-serif;
+$headings-line-height: 1.18;
 $font-family-sans-serif: 'Roboto', sans-serif;
 $font-weight-normal: 300 !default;
 
 $font-complementary: $font-family-sans-serif;
-$h1-font-size: 52pt;
-$h2-font-size: 3.51em;
-$h3-font-size: 2.67em;
-$h4-font-size: 2em;
+$h1-font-size: 3.4em;
+$h2-font-size: 2.5em;
+$h3-font-size: 2.2em;
+$h4-font-size: 1.9em;
 $h5-font-size: 1.5em;
 $h6-font-size: 1em;
+
+$h1-font-size-sm: 2.5em;
+$h2-font-size-sm: 2.1em;
+$h3-font-size-sm: 1.7em;
+$h4-font-size-sm: 1.4em;
+$h5-font-size-sm: 1.1em;
+$h6-font-size-sm: .9em;
 
 // Buttons
 $btn-border-radius: 50px !default;
 $btn-border-radius-lg: 50px !default;
 $btn-border-radius-sm: 50px !default;
 
-$btn-font-family: $headings-font-family !default;
-$btn-font-weight: $headings-font-weight;
+$btn-font-weight: 300 !default;
+$btn-font-family: $font-family-sans-serif !default;
 $btn-border-width: 2px !default;
 
-$btn-padding-y-sm: 12px !default;
-$btn-padding-x-sm: 24px !default;
-$btn-font-size-sm: .775rem !default;
+$btn-padding-x: 80px !default;
+$btn-padding-y: 27px !default;
+$btn-font-size: 1.2rem !default;
 
-$btn-padding-y: 14px !default;
-$btn-padding-x: 28px !default;
-$btn-font-size: .95rem !default;
-
-$btn-padding-y-lg: 16px !default;
-$btn-padding-x-lg: 32px !default;
-$btn-font-size-lg: 1.1rem !default;
+$btn-padding-x-sm: 33px !default;
+$btn-padding-y-sm: 16px !default;
+$btn-font-size-sm: 1rem !default;

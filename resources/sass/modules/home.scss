@@ -1,11 +1,10 @@
-// Home intro section
+// Home partials styling
 
 .home-intro{
     position: relative;
     @include media-breakpoint-down(md) {
         padding-bottom: 420px;
     }
-   
     &-background{ 
         position: absolute;
         top: 0;
@@ -26,39 +25,73 @@
     &-content {
         display: flex;
         align-items: center;
+        padding: 33px 0;
         @include media-breakpoint-up(lg) {
-            height: 667px;
+            padding: 110px 0;         
         }
         &-inner {
             padding: 0 5%;
             @include media-breakpoint-down(md) {
-                padding: 40px 0;
+                padding: 30px 0;
+            }
+            .text-complementary{
+                margin-bottom: 20px;
             }
         }
     }
+
+    &-lead {
+        padding: 35px 0;
+        margin-bottom: 0;
+        @include media-breakpoint-down(md) {
+            padding: 20px 0;
+        }
+     }
 }
 
-// Home testimonials section
 
 .home-testimonials {
-    padding: 117px 0;
+    padding: 57px 0;
+    @include media-breakpoint-up(lg) {
+        padding: 117px 0;
+    }
     &-content {
-        margin-bottom: 67px;
+        margin-bottom: 34px;
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
     }
     &-slider {
         &-inner {
             z-index: 20;
+            margin-top: 20px;
+            margin-bottom: 40px;
+
+            .author {
+                font-size: 1em;
+            }
+
+            .message {
+                font-size: 1.25em;
+            }
         }
         &-controls {
-            margin-top: -7rem;
+            margin-top: -10.5rem;
+            @include media-breakpoint-up(md) {
+                margin-top: -10rem;
+            }
             outline: none;
             .control {
-                width: 50px;
-                height: 50px;
+                width: 25px;
+                height: 25px;
                 background-repeat: no-repeat;
                 background-size: cover;
                 outline: none;
                 cursor: pointer;
+                @include media-breakpoint-up(lg) {
+                    width: 50px;
+                    height: 50px;
+                }
                 &.previous {
                     background-image: url('/images/icons/control-previous.svg');
                 }
@@ -70,8 +103,38 @@
     }
 }
 
-// Home gallery section
-
 .home-gallery {
     padding: 95px 0;
+    @include media-breakpoint-down(md) {
+        padding: 57px 0;
+    }
+    &-inner {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .gallery-item {
+            a {
+                height:310px;
+                width: 100%; 
+            }
+            &:not(:last-child) {
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 20px;
+                }
+            }
+            img {
+                position: relative;
+                transition: filter .3s ease-in-out;
+                filter: brightness(1);
+                width: 100%;
+                @include media-breakpoint-down(sm) {
+                    width: 75%;
+                }
+            }
+            &:hover {
+                img {
+                    filter: brightness(.5);
+                }
+            }
+        }
+    }
 }

@@ -12,8 +12,8 @@
         </div>
         <div class="home-banner-content">
             <p class="text-complementary">Design and order your new kitchen online today</p>
-            <h1>Bespoke & made to measure handmade kitchen design</h1>
-            <a href="#" class="btn">Order now</a>
+            <h1 class="main-heading">Bespoke & made to measure handmade kitchen design</h1>
+            <a href="#" class="btn btn-mtc-primary" title="Order now">Order now</a>
         </div>
     </div>
 @endif

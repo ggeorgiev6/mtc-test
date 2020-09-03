@@ -13,5 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Home route
+// Homepage route
 Route::get('/', 'PageController@index')->name('home');
