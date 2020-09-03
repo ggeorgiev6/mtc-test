@@ -56,7 +56,7 @@ if (navSelector && mobileMenu && darkOverlay) {
 
 // Toggle the navbar 'scrolled' class when scrolling down the page
 
-let scrollpos = window.scrollY;
+let scrollpos = window.pageYOffset;
 const nav = document.querySelector("header");
 const nav_height = nav.offsetHeight;
 
@@ -64,7 +64,7 @@ const isScrolled = () => nav.classList.add("scrolled");
 const isNotScrolled = () => nav.classList.remove("scrolled");
 
 window.addEventListener('scroll', function() { 
-    scrollpos = window.scrollY;
+    scrollpos = window.pageYOffset;
 	if (scrollpos >= nav_height) { 
 		isScrolled(); 
 	} else { 

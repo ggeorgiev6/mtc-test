@@ -69,3 +69,13 @@
         }
     }
 }
+
+// IE fix for the banner content
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .home-banner-content {
+         display: block;
+         width: 100%;
+         transform: translateY(29%);
+    }
+ }
